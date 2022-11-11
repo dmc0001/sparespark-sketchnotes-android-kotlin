@@ -13,3 +13,13 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+/app/src/main/java/sparespark/sketchnotes/common/Secret.kt
+/app/src/main/java/sparespark/sketchnotes/common/Backups.kt
+/app/src/main/java/sparespark/sketchnotes/common/ViewEx.kt
+/app/src/main/java/sparespark/sketchnotes/data/db/RoomNoteDatabase.kt
+/app/src/main/res/layout/notelist_view.xml
+/app/src/main/res/layout/notedetail_view.xml
+/app/src/main/res/layout/item_note.xml
+
+

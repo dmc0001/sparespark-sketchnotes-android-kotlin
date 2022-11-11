@@ -1,11 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/notelistView">
 
     <fragment
         android:id="@+id/notelistView"
         android:name="sparespark.sketchnotes.note.notelist.NotelistView"
-        android:label="NotelistView" />
+        android:label="NotelistView">
+        <action
+            android:id="@+id/toLoginActivity"
+            app:destination="@id/loginActivity" />
+        <action
+            android:id="@+id/toNoteDetailView"
+            app:destination="@id/noteDetailView" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/noteDetailView"
+        android:name="sparespark.sketchnotes.note.notedetail.NoteDetailView"
+        android:label="NoteDetailView">
+        <argument
+            android:name="noteId"
+            android:defaultValue='""'
+            app:argType="string" />
+    </fragment>
+
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="sparespark.sketchnotes.login.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/login_view" />
+
 </navigation>
